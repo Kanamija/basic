@@ -11,5 +11,5 @@
 
 var number;
 let array;
-const object;
+// const object;
 
