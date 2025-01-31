@@ -41,17 +41,16 @@ for (let i = 0; i < anotherList.length; i++) {
 // For loops can be difficult to understand at first, it can be helpful to watch what each moving part is doing on each loop.
 // Take this example and pay attention to what each console.log is logging on each loop in your console. Please uncomment the console logs before running.
 
-const fruits = ["apple", "pear", "banana", "kiwi", "apricot"];
+// const fruits = ["apple", "pear", "banana", "kiwi", "apricot"];
 
-for (let i = 0; i < fruits.length; i++) {
-  fruits[i] += "s";
-  // console.log("This is our conter variable:", i);
-  // console.log("This is our conditional expression:", i < fruits.length);
-  // console.log("This is our updated fruit:", fruits[i]);
-  // console.log(
-  //   "If the conditional expression is true, the loop will increment i by 1, and run again, if false, it exits the loop"
-  // );
-}
+// for (let i = 0; i < fruits.length; i++) {
+//   fruits[i] += "s";
+//   console.log("This is our conter variable:", i);
+//   console.log("This is our conditional expression:", i < fruits.length);
+//   console.log("This is our updated fruit:", fruits[i]);
+//   console.log("If the conditional expression is true, the loop will increment i by 1, and run again, if false, it exits the loop"
+//   );
+// }
 // console.log("When this prints, the loop is over:", fruits);
 
 // Challenge
@@ -61,8 +60,12 @@ for (let i = 0; i < fruits.length; i++) {
 let countToTen = 0;
 
 // Add code here
+ 
+// for (let i = 0; i <= 10; i++) {
+//   countToTen++
+// }
 
-// Uncomment below to check your answers
+// // Uncomment below to check your answers
 // console.log(countToTen); // 10
 
 // Challenge continued
@@ -72,6 +75,10 @@ let countToTen = 0;
 const nums = [1, 2, 3, 4, 5, 6];
 
 // Add code here
+
+for (let i = 0; i < nums.length; i++) {
+  nums[i] *= 11;
+}
 
 
 // Uncomment below to check your answers
@@ -84,6 +91,10 @@ const weatherUpdate = [];
 
 // Iterate over the weather array using a for loop, pushing a string with the format "It is [weather] outside" into the weatherUpdate array.
 // Add code here
+
+for (let i = weather.length - 1; i >= 0; i--) {
+  weatherUpdate.push(`It is ${weather[i]} outside!`)
+}
 
 // Uncomment below to check your answers
 // console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
@@ -110,6 +121,10 @@ const nationalParks = [];
 
 //Add code here
 
+for (let i = 0; i < park.length; i++) {
+  nationalParks.push(`${park[i]} National Park is in ${location[i]} and attractions are ${attraction[i]}`)
+};
+
 // Uncomment below to check your answers
-// console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
+console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
 
