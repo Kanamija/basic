@@ -53,16 +53,26 @@ const lotteryNum = 7;
 
 // Challenge
 
-const num = 8;
+let num = 8;
 let result;
 
 // Use an if statement to check if num is greater than 10. If num is greater than 10, reassign the value of result to boolean true.
 // If num is less than 10, assign the value of result to num times 11.
 // Add code here
 
+if (num > 10 ) {
+  result = true;
+}
+if (num < 10) {
+  result = num * 11
+}
+if (num === 10) {
+  result = num;
+}
+
 
 // Uncomment the below to check your answers
-// console.log(result); // 88
+console.log(result); // 88
 
 // Challenge continued
 
