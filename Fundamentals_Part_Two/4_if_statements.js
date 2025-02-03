@@ -72,7 +72,7 @@ if (num === 10) {
 
 
 // Uncomment the below to check your answers
-console.log(result); // 88
+// console.log(result); // 88
 
 // Challenge continued
 
@@ -81,10 +81,20 @@ const fizzbuzz = [];
 // Use a for loop to iterate through numbers 1 through 20. Push each number into fizzbuzz, but push the string "fizz" in place of numbers divisible by 3, "buzz" in place of numbers divisible by
 // 5, and fizzbuzz in place of numbers divisible by both 3 and 5. Remember to utilize the remainder/modulo operator.
 // Add code here
-
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0 ) {
+    fizzbuzz.push('fizzbuzz');
+  } else if (i % 3 === 0) {
+    fizzbuzz.push('fizz');
+  } else if (i % 5 === 0) {
+    fizzbuzz.push('buzz');
+  } else {
+    fizzbuzz.push(i);
+  }
+}
 
 // Uncomment the below to check your answers
-// console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
+console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
 
 // Challenge continued
 
