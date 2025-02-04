@@ -102,6 +102,9 @@ const isItEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Iterate through the isItEven array, if the number is even, multiply the number by 10.
 
+for (let i = 0; i < isItEven.length; i++) {
+  
+}
 
 // Uncomment the below to check your answers
 // console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
