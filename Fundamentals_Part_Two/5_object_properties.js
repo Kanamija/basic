@@ -66,13 +66,13 @@ const myShoppingList = {
 
 // Uncomment the code below
 
-// for (let property in myShoppingList) {
-//   console.log("property is the key:", property);
-//   console.log(
-//     "myShoppingList[property] is the value:",
-//     myShoppingList[property]
-//   );
-// }
+for (let key in myShoppingList) {
+  console.log("key is the key:", key);
+  console.log(
+    "myShoppingList[key] is the value:",
+    myShoppingList[key]
+  );
+}
 
 // The above for... in loop returns:
 // property is the key: item1
