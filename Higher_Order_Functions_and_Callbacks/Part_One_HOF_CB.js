@@ -24,31 +24,44 @@ const pastTense = (array) => {
 
 const timesEleven = (num) => num * 11;
 
-const map;
+const map = (arrayOfNums, callback) => {
+  const resultArr = [];
+  for (let i = 0; i < arrayOfNums.length; i++) {
+    let element = arrayOfNums[i];
+    resultArr.push(callback(element));
+  }
+  return resultArr
+}
 
 // Uncomment below to check your work
 // console.log(typeof timesEleven); // function
 // console.log(typeof map); // function
 // console.log(map([1, 2, 3, 4], timesEleven)); // [11, 22, 33, 44]
 
-// Challenge continued
+// // Challenge continued
 
-// Create a function forEach that accepts an array and a callback. forEach will run the callback on each element of the array with a for loop without returning anything.
-// Now, rebuild map from the previous challenge, name the function mapTwo. Instead of using a for loop, use the forEach function that was just created.
+// // Create a function forEach that accepts an array and a callback. forEach will run the callback on each element of the array with a for loop without returning anything.
+// // Now, rebuild map from the previous challenge, name the function mapTwo. Instead of using a for loop, use the forEach function that was just created.
 
-const forEach;
+const forEach = (array, callback) => {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
+}
 
-const mapTwo;
+const mapTwo = (array, callback) => {
+  return callback(array)
+}
 
-// Uncomment below to check your work
+// // Uncomment below to check your work
 // console.log(typeof forEach); // function
 // console.log(typeof mapTwo); // function
 // forEach(["x", "y", "z"], (x) => console.log(x.toUpperCase())); // X, Y, Z
 // console.log(map([1, 2, 3], (y) => y * 2)); // [ 2, 4, 6 ]
 
-// Challenge continued
+// // Challenge continued
 
-// Complete the functions cb1 and cb2 in the places marked add code here to return the desired output in the console logs below.
+// // Complete the functions cb1 and cb2 in the places marked add code here to return the desired output in the console logs below.
 
 const filterThisArray = (array, callback) => {
   const newArray = [];
@@ -76,21 +89,21 @@ const arrayOfThings = ["CAT", "dog", "CATDOG", "wish", "WISHBONE"];
 // console.log(filterThisArray(arrayOfThings, cb1)); // [ 'CAT', 'CATDOG', 'WISHBONE' ]
 // console.log(filterThisArray(arrayOfThings, cb2)); // [ 'dog', 'wish' ]
 
-// Challenge continued
+// // Challenge continued
 
-// Create a function orFilter that accepts an array and two seperate callbacks. Using the built in array method filter, return an array that contains
-// all of the elements that return a truthy value from either of the two callbacks.
+// // Create a function orFilter that accepts an array and two seperate callbacks. Using the built in array method filter, return an array that contains
+// // all of the elements that return a truthy value from either of the two callbacks.
 
-const orFilter;
+// const orFilter;
 
-// Uncomment below to check your work
-// console.log(typeof orFilter); // function
-// const animals = ["bobcats", "monkeys", "seal", "lizard", "snake", "elephant"];
-// console.log(
-//   orFilter(
-//     animals,
-//     (s) => s.endsWith("s"),
-//     (k) => k.startsWith("s")
-//   )
-// ); // [ 'bobcats', 'monkeys', 'seal', 'snake' ]
+// // Uncomment below to check your work
+// // console.log(typeof orFilter); // function
+// // const animals = ["bobcats", "monkeys", "seal", "lizard", "snake", "elephant"];
+// // console.log(
+// //   orFilter(
+// //     animals,
+// //     (s) => s.endsWith("s"),
+// //     (k) => k.startsWith("s")
+// //   )
+// // ); // [ 'bobcats', 'monkeys', 'seal', 'snake' ]
 
