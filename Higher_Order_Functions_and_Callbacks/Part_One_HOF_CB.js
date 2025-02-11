@@ -75,17 +75,21 @@ const filterThisArray = (array, callback) => {
 
 const cb1 = (string) => {
   // Add code here
-
+  if (string === string.toUpperCase()) {
+    return string
+  }
 };
 
 const cb2 = (string) => {
   // Add code here
-
+  if (string === string.toLowerCase()) {
+    return string
+  }
 };
 
 const arrayOfThings = ["CAT", "dog", "CATDOG", "wish", "WISHBONE"];
 
-// Uncomment below to check your work
+// // Uncomment below to check your work
 // console.log(filterThisArray(arrayOfThings, cb1)); // [ 'CAT', 'CATDOG', 'WISHBONE' ]
 // console.log(filterThisArray(arrayOfThings, cb2)); // [ 'dog', 'wish' ]
 
@@ -94,16 +98,19 @@ const arrayOfThings = ["CAT", "dog", "CATDOG", "wish", "WISHBONE"];
 // // Create a function orFilter that accepts an array and two seperate callbacks. Using the built in array method filter, return an array that contains
 // // all of the elements that return a truthy value from either of the two callbacks.
 
-// const orFilter;
+const orFilter = (array, callback1, callback2) => {
+  const result = array.filter
+ 
+  }
 
 // // Uncomment below to check your work
-// // console.log(typeof orFilter); // function
-// // const animals = ["bobcats", "monkeys", "seal", "lizard", "snake", "elephant"];
-// // console.log(
-// //   orFilter(
-// //     animals,
-// //     (s) => s.endsWith("s"),
-// //     (k) => k.startsWith("s")
-// //   )
-// // ); // [ 'bobcats', 'monkeys', 'seal', 'snake' ]
+console.log('here:', typeof orFilter); // function
+const animals = ["bobcats", "monkeys", "seal", "lizard", "snake", "elephant"];
+console.log(
+  orFilter(
+    animals,
+    (s) => s.endsWith("s"),
+    (k) => k.startsWith("s")
+  )
+); // [ 'bobcats', 'monkeys', 'seal', 'snake' ]
 
